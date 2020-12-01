@@ -1,0 +1,8 @@
+div {
+  display: flex;
+  height: 100vh;
+  background-color: #ff6752;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
