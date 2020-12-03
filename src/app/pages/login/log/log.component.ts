@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { IUserCredential } from 'src/app/interface/user';
 import { LogService } from 'src/app/services/log.service';
 import { environment } from 'src/environments/environment';
-import swal from 'sweetalert';
+import swal from 'sweetalert2';
 
 
 @Component({
@@ -35,14 +35,14 @@ export class LogComponent implements OnInit {
   submit() {
     const { email, password } = this.loginForm.value
     const credential: IUserCredential = { email: email, password: password }
-    swal({ title: "Cargando...", icon: "info", buttons: [false], closeOnClickOutside: false })
+    swal.queue([{ title: "Cargando...", icon: "info", timerProgressBar: true, timer: 2000 }])
     this.logUser.log(credential).subscribe(auth => {
       localStorage.setItem(environment.localStorageToken, auth.token)
-      swal({ title: "Ok!", icon: "success", buttons: [false], timer: 2000 })
+      swal.queue([{ title: "Ok!", icon: "success", timerProgressBar: true, timer: 500 }])
       this.userLogin()
     }, e => {
       this.cleanForm()
-      swal({ title: "Usuario o contraseña invalidos", icon: "error", buttons: [false], timer: 2000 })
+      swal.queue([{ title: "Usuario o contraseña invalidos", icon: "error", timerProgressBar: true, timer: 2000 }])
     })
   }
 
