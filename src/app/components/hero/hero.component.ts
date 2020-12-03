@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeroComponent implements OnInit {
 
   @Input() title
-  @Input() descripcions
+  @Input() descriptions
 
   constructor() { }
 
