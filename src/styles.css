@@ -10,6 +10,9 @@ html {
 button {
   outline: none;
 }
+image {
+  outline: none;
+}
 .w14 {
   font-size: 14px;
 }

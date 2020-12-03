@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AboutComponent } from './about/about.component';
 import { RouterModule, Routes } from '@angular/router';
-import { LogComponent } from './log/log.component';
+
+
 
 const routes: Routes = [
-  { path: "", component: LogComponent }
+  { path: "", component: AboutComponent }
 ]
 
 @NgModule({
@@ -15,4 +17,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class LoginRoutingModule { }
+export class AboutRoutingModule { }

@@ -6,30 +6,32 @@
   </div>
 
   <div class="login-form" [formGroup]="loginForm">
-    <div class="login-form-title">
-      <small class="upperCase color-black bold">BIENVENIDO</small>
-    </div>
-    <div class="login-form-credentials">
-      <input type="email" formControlName="email" placeholder="EMAIL" />
-      <input
-        type="password"
-        formControlName="password"
-        placeholder="CONTRASEÑA"
-      />
-      <a class="color-gray w14" routerLink="">¿Olvidaste tu contraseña?</a>
-    </div>
-    <div class="login-form-button">
-      <button
-        [disabled]="!emailValid && !passwordValid"
-        class="btn-primary"
-        (click)="submit()"
-      >
-        INICIAR SESIÓN
-      </button>
-      <span class="color-gray w14">
-        AÚN NO TENGO CUENTA
-        <a routerLink="" style="color: #015f91">REGISTRARSE</a></span
-      >
+    <div class="login-form-container">
+      <div class="login-form-title">
+        <small class="upperCase color-black bold">BIENVENIDO</small>
+      </div>
+      <div class="login-form-credentials">
+        <input type="email" formControlName="email" placeholder="EMAIL" />
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="CONTRASEÑA"
+        />
+        <a class="color-gray w14" routerLink="">¿Olvidaste tu contraseña?</a>
+      </div>
+      <div class="login-form-button">
+        <button
+          [disabled]="!emailValid && !passwordValid"
+          class="btn-primary"
+          (click)="submit()"
+        >
+          INICIAR SESIÓN
+        </button>
+        <span class="color-gray w14">
+          AÚN NO TENGO CUENTA
+          <a routerLink="" style="color: #015f91">REGISTRARSE</a></span
+        >
+      </div>
     </div>
   </div>
 </div>

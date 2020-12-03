@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { LogComponent } from './log/log.component';
+import { JobUsComponent } from './job-us/job-us.component';
 
 const routes: Routes = [
-  { path: "", component: LogComponent }
+  { path: "", component: JobUsComponent }
 ]
 
 @NgModule({
@@ -15,4 +15,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class LoginRoutingModule { }
+export class JobUSRoutingModule { }

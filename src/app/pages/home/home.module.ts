@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PrivateComponent } from './private/private.component';
+import { RouterModule } from '@angular/router';
 import { HomeRoutingModule } from './home-routing.module';
-
-
+import { HomeComponent } from './home/home.component';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
-  declarations: [PrivateComponent],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    ComponentsModule,
+    HomeRoutingModule,
   ]
 })
 export class HomeModule { }
