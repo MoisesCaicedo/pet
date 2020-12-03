@@ -8,6 +8,7 @@ html {
   font-family: "Open Sans";
 }
 * {
+  text-decoration: none;
   outline: none;
   border: none;
 }
@@ -27,9 +28,7 @@ html {
 .color-black {
   color: #4d4f5c;
 }
-a {
-  text-decoration: none;
-}
+
 .container-content {
   max-width: 800px;
   margin: auto;
@@ -43,4 +42,8 @@ a {
   border-radius: 40px;
   color: #f8f8f8;
   cursor: pointer;
+}
+.disable {
+  opacity: 80%;
+  cursor: default;
 }

@@ -22,6 +22,7 @@
       <div class="login-form-button">
         <button
           [disabled]="!emailValid && !passwordValid"
+          [ngClass]="{ disable: !emailValid || !passwordValid }"
           class="btn-primary"
           (click)="submit()"
         >
@@ -36,6 +37,6 @@
   </div>
 </div>
 
-<!-- <div *ngIf="loginForm">
+<div *ngIf="loginForm">
   <p>{{ loginForm.value | json }}</p>
-</div> -->
+</div>
