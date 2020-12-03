@@ -5,6 +5,7 @@
   padding: 30px 142px 20px 156px;
   align-items: center;
   background: #ff6752;
+  margin-bottom: 20px;
 }
 .nav-bar-image {
   padding: 5px 10px;
@@ -17,7 +18,7 @@
 }
 
 .nav-bar-link a {
-  font: normal normal normal 24px/33px Open Sans;
+  font: normal normal normal 24px Open Sans;
   padding-right: 25px;
   color: #fff;
   opacity: 1;
