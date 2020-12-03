@@ -1,11 +1,13 @@
 .nav-bar {
+  padding: 20px 0;
+  background: #ff6752;
+  /* margin-bottom: 20px; */
+}
+.nav-bar-container {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 142px 20px 156px;
-  align-items: center;
-  background: #ff6752;
-  margin-bottom: 20px;
 }
 .nav-bar-image {
   padding: 5px 10px;

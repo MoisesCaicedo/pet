@@ -1,0 +1,36 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+  /* border: 1px red solid; */
+}
+.hero-container-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+.hero-info {
+  max-width: 450px;
+}
+.hero-info > * {
+  margin-bottom: 36px;
+}
+
+.hero-info h1 {
+  text-transform: capitalize;
+}
+
+.hero-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hero-contact button {
+  margin-right: 36px;
+}
+
+.hero-image img {
+  max-width: 590px;
+  max-height: 570px;
+}
